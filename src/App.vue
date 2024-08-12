@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <NavMenu/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavMenu from '@/components/NavMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    // Header,
+    NavMenu
+  },
+};
 </script>
 
 <style>
 #app {
+  flex-direction: column;
+  display: flex;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh; /* 100% 的视口高度 */
+  margin: -8px;
+
 }
+
+html {
+
+  background-color: #f2f2f2; /* 浅灰色背景 */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html,body {
+      margin: 0;
+      height: 100%;
+    }
+
+.el-footer {
+  margin-top: auto;
+}
+
 </style>
+
