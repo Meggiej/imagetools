@@ -5,6 +5,7 @@ import ContactPage from '@/components/ContactPage.vue';
 import HomePage from '@/components/HomePage.vue';
 import YaSuoZhuanHuan from '@/components/YaSuoZhuanHuan.vue';
 import Base64ToPng from "@/components/Base64ToPng.vue";
+import PngToBase64 from "@/components/PngToBase64.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
         path: '/Base64ToPng',
         name: 'Base64ToPng',
         component: Base64ToPng
+    },
+    {
+        path: '/PngToBase64',
+        name: 'PngToBase64',
+        component: PngToBase64
     },
     {
         path: '/',

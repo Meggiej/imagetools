@@ -4,7 +4,7 @@
     <el-input
         spellcheck="false"
         type="textarea"
-        rows=20
+        rows=10
         placeholder="请粘贴base64，如data:image/png;base64,xxx..."
         v-model="textarea">
     </el-input>

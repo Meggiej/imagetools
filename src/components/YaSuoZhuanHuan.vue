@@ -39,7 +39,7 @@
             </div>
           </el-col>
         </router-link>
-        <router-link to="/AboutPage">
+        <router-link to="/PngToBase64">
           <el-col :span="6">
             <div class="grid-content bg-purple">
               <div class="item-left">
@@ -49,7 +49,7 @@
                     :fit="contain"></el-image>
               </div>
               <div class="item-right">
-                <h4>Base64转图片</h4>
+                <h4>图片转Base64</h4>
                 <el-tooltip placement="top">
                   <div slot="content">{{ png2base64 }}</div>
                   <p>{{ png2base64 }}</p>
