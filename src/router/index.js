@@ -61,4 +61,9 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 });
+
+router.beforeEach((to, from, next) => {
+   document.title = "在线图像处理"
+   next()
+ })
 export default router

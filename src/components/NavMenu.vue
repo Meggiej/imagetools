@@ -34,11 +34,9 @@
 
     </el-aside>
 
-
     <el-main class="main-class">
       <router-view></router-view>
     </el-main>
-
 
   </el-container>
 
@@ -64,17 +62,22 @@ a {
 
 
 .menu-class {
-  margin-left: 5px;
-  padding-right: 10px;
-  height: 100vh;
+  //margin-left: 5px;
+  //padding-right: 10px;
+  height: 100%;
   width: auto;
+  overflow: auto;
 
 }
 .el-menu-item {
   font-size: 16px;
+  padding-right:40px;
+  //font-weight: bold;
 }
 .main-class {
+  height: 100%;
   width: auto;
+  overflow: auto;
 }
 
 </style>

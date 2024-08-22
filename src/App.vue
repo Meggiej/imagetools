@@ -21,8 +21,9 @@ export default {
   flex-direction: column;
   display: flex;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  height: 100vh; /* 100% 的视口高度 */
-  margin: -8px;
+  height: 100%; /* 100% 的视口高度 */
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -31,7 +32,7 @@ html {
   background-color: #f2f2f2; /* 浅灰色背景 */
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 html,body {
       margin: 0;
