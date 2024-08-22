@@ -1,52 +1,47 @@
 <template>
   <div class="hello">
-    <h1>压缩转换</h1>
+    <h1>制作生成</h1>
     <div>
       <el-row :gutter="20">
-        <router-link to="/Base64ToPng">
+        <router-link to="/biaozhu">
           <el-col :span="6">
             <div class="grid-content bg-purple">
               <div class="item-left">
                 <el-image
                     class="function-img"
-                    :src="require('../../public/yasuozhuanhuan/Base64转图片.png')"
+                    :src="require('../../public/zhizuoshengcheng/biaozhu.png')"
                     :fit="contain"></el-image>
               </div>
               <div class="item-right">
-                <h4>Base64转图片</h4>
+                <h4>图片标注</h4>
                 <el-tooltip placement="top">
-                  <div slot="content">{{ base642png }}</div>
-                  <p>{{ base642png }}</p>
+                  <div slot="content">{{ biaozhu }}</div>
+                  <p>{{ biaozhu }}</p>
                 </el-tooltip>
               </div>
             </div>
           </el-col>
         </router-link>
-        <router-link to="/PngToBase64">
-          <el-col :span="6">
-            <div class="grid-content bg-purple">
-              <div class="item-left">
-                <el-image
-                    class="function-img"
-                    :src="require('../../public/yasuozhuanhuan/图片转Base64.png')"
-                    :fit="contain"></el-image>
-              </div>
-              <div class="item-right">
-                <h4>图片转Base64</h4>
-                <el-tooltip placement="top">
-                  <div slot="content">{{ png2base64 }}</div>
-                  <p>{{ png2base64 }}</p>
-                </el-tooltip>
-              </div>
-            </div>
-          </el-col>
-        </router-link>
-<!--        <el-col :span="6">-->
-<!--          <div class="grid-content bg-purple"></div>-->
-<!--        </el-col>-->
-<!--        <el-col :span="6">-->
-<!--          <div class="grid-content bg-purple"></div>-->
-<!--        </el-col>-->
+<!--        <router-link to="/PngToBase64">-->
+<!--          <el-col :span="6">-->
+<!--            <div class="grid-content bg-purple">-->
+<!--              <div class="item-left">-->
+<!--                <el-image-->
+<!--                    class="function-img"-->
+<!--                    :src="require('../../public/yasuozhuanhuan/图片转Base64.png')"-->
+<!--                    :fit="contain"></el-image>-->
+<!--              </div>-->
+<!--              <div class="item-right">-->
+<!--                <h4>图片转Base64</h4>-->
+<!--                <el-tooltip placement="top">-->
+<!--                  <div slot="content">{{ png2base64 }}</div>-->
+<!--                  <p>{{ png2base64 }}</p>-->
+<!--                </el-tooltip>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </el-col>-->
+<!--        </router-link>-->
+
       </el-row>
     </div>
   </div>
@@ -60,7 +55,7 @@ export default {
   },
   data() {
     return {
-      "base642png": "将base64编码转换成图片",
+      "biaozhu": "在图片指定位置画框或圆",
       "png2base64": "将图片转换成base64编码",
       "contain": "contain"
     };

@@ -18,8 +18,8 @@
             <span slot="title">格式转换</span>
           </el-menu-item>
         </router-link>
-        <router-link to="/aboutpage">
-          <el-menu-item index="aboutpage">
+        <router-link to="/ZhiZuoShengCheng">
+          <el-menu-item index="ZhiZuoShengCheng">
             <i class="el-icon-icon_shengchengzhizuotupian"></i>
             <span slot="title">制作生成</span>
           </el-menu-item>

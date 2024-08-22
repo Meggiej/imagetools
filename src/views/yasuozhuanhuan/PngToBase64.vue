@@ -14,9 +14,9 @@
           accept="image/*"
           hidden
       />
-      <el-image class="buttons-img" :src="require('../../public/yasuozhuanhuan/图片添加.png')" :fit="contain"/>
+      <el-image class="buttons-img" :src="require('../../../public/yasuozhuanhuan/图片添加.png')" :fit="contain"/>
       <el-row class="buttons">
-        <el-button type="primary" plain icon="el-icon-upload el-icon--right" @click="handleFileChange">选择图片
+        <el-button type="primary" plain icon="el-icon-upload el-icon--right" >选择图片
         </el-button>
       </el-row>
       <p class="buttons">将图片拖到这里，或点击选择图片</p>
